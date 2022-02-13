@@ -1,36 +1,150 @@
-body {
+* {
     font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
 }
 
-header h1 {
-    font-size: 100px;
-    font-weight: bold;
-    color: khaki;
+html {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+header {
+    height: 69px;
+    width: 100%;
+    margin: 0;
+    border-bottom: 1px solid seashell;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    opacity: 1;
+}
+
+#logo {
+    height: 50px;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: underline;
+    margin: 0 10px 0 30px;
+}
+
+nav ul {
+    display: inline-flex;
+    list-style-type: none;
+}
+
+main {
+    margin-top: 69px;
+    margin-bottom: 70px;
+}
+
+#hero {
+    background-image: url("Resources/img-mission-background.jpg");
+    width: 1200px;
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    margin: 0 50px 0;
+}
+
+#hero * {
+    flex-basis: 100%;
     text-align: center;
-    background-image: url("./Resources/pattern.jpeg");
+    margin: 0;
 }
 
 h2 {
-    font-size: 32px;
-    font-weight: bold;
-    color: white;
+    font-size: 40px;
 }
 
-#brushes h2 {
-    background-color: mediumspringgreen;
-    background-attachment: fixed;
+#tea {
+    margin: 50px 0 0 0;
 }
 
-#frames h2 {
-    background-color: lightcoral;
-    background-attachment: fixed;
+#tea * {
+    flex-basis: 100%;
+    text-align: center;
+    margin: 0;
 }
 
-#paint h2 {
-    background-color: skyblue;
-    background-attachment: fixed;
+#tealinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.cost {
-    color: blue;
+#tealinks img {
+    width: 300px;
+    height: 200px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+#locations {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("Resources/img-locations-background.jpg");
+    height: 500px;
+    width: 1200px;
+    align-content: center;
+    justify-content: center;
+    margin: 0 50px;
+}
+
+#locations h2 {
+    flex-basis: 100%;
+    background: none;
+    text-align: center;
+}
+
+#locations div {
+    opacity: 1;
+    height: 300px;
+    width: 300px;
+    margin: 15px 20px;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+}
+
+#contact {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    margin: 0 0 50px;
+}
+
+footer {
+    text-align: left;
+    position: fixed;
+    bottom: 0;
+    opacity: 1;
+    width: 100%;
+}
+
+footer p {
+    text-align: left;
+    font-size: 15px;
 }
